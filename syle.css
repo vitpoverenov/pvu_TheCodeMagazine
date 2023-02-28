@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav  {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/*Pseudo-elements * Все псевдо-елементы имеют значение инлайн*/ 
+
+h1::first-letter {
+  font-style: normal;
+}
+
+h3::first-letter {
+  font-size: 40px;
+}
+
+p::first-line {
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/*Relative-Absolute positioning*/
+
+.article__header {
+  position: relative;
+}
+
+.article__header::after {
+  content: "TOP";
+  background: yellow;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+}
+
+h4 {
+   /*TEXT TRANSFORM IT IS Трансформация текста ( Все большие, все маленькие) */
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+li {
+  /* FONT FAMILY SANS-Serif это полужирный стиль текста*/
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+  
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+/*FOOTER */
+
+footer {
+  clear: both;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  color: #444;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 25px 35px;
+  width: 300px;
+  float: right;
+} 
+
+article {
+  margin-bottom: 60px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*Pseudo-classes*/
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+li:nth-child(2) {
+  color: #444;
+}
+
+/* Styling LINKS  With Pseudo-classes LoVE Hate*/
+
+a:link {
+  color:#1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(16, 152, 173)
+}
+
+a:hover {
+  color:orangered;
+  font-weight: bold;
+  /*Funny Wave property FOR TEXT LINKS */
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/*Pseudo-Classes*/
+
+nav a:link {
+  display: inline-block; /*Block level element*/
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/*Button*/
+
+button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: alias;
+  font-size: 22px;
+  padding: 20px;
+}
+
+/*FLOATS*/
+
+.img-larajones {
+ float: left;
+ margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 15px;
+
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
