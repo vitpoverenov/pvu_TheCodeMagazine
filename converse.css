@@ -1,11 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif; /*Полужирный шрифт*/
+  line-height: 1.4;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; /*Учитывает высоту контейнеров детей  это свойвство*/
+
+}
+
+/*.container {
+ 
+}
+*/
+
+.product-img {
+  float: left;
+  margin-right: 40px;
 }
 
 /*Producrt*/
+
 .product {
+  width: 825px;
+  margin: 50px auto;
   border: 4px solid black;
   padding: 5px;
+  position: relative;
 }
 
 .product-title {
@@ -13,23 +41,58 @@ body {
   font-style: 22px;
   text-transform: uppercase;
   background-color: #f7f7f7;
+  margin-top: 0;
 }
 
 /*Producrt information*/
 
+.product-info {
+ width: 243px;
+ float: left;
+ margin-right: 30px;
+ margin-top: 20px;
+ 
+}
+
 .price {
+  float: left;
   font-size: 24px;
 }
 
 .shipping {
+  float: right;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
+  margin-top: 8px;
 }
+
+.product-description {
+  clear: both;
+  margin-top: 10px;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 7px 12px;
+  display: inline-block; 
+  position: absolute;
+  top: -15px;
+  left: -34px;
+  letter-spacing: 2px;
+}
+
 
 .more-info:link, .more-info:visited {
   color: black;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .more-info:hover, .more-info:active {
@@ -37,6 +100,12 @@ body {
 }
 
 /*Product Details*/
+
+.product-details {
+  float: left;
+  width: 243px;
+  margin-top: 20px;
+}
 
 .details-title {
   text-transform: uppercase;
@@ -48,6 +117,7 @@ body {
 }
 
 /*Button*/ 
+
 .btn {
   text-transform: uppercase;
   font-size: 22px;
@@ -58,10 +128,45 @@ body {
   padding: 15px;
   width: 100%;
   border-top: 4px solid black;
+  
 }
 
 .btn:hover {
+  border-top: white;
   color: black;
   background-color: white;
-
 }
+
+/*SQUARE COLORS */
+
+.color {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+
+
